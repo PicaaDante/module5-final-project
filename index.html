@@ -3,23 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="index.js" defer></script>
-  <title>Document</title>
+  <title>Movie Search</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div id="app">
-    <div class="flex flex-col" style="display: flex; flex: 1 1 0%;">
-      <div class="navbar flex flex-col">
-        <div 
-          class="flex content-wrapper justify-between align-center"
-          style="flex-direction: row; z-index: 1005;"
-        ></div>
-        <div
-          style="margin-top: 40px;" 
-          class="content-wrapper flex-col align-center"
-        ></div>
-      </div>
+  <nav>
+    <div class="nav__container">
+      <a href="#" class="nav__logo">Filmster</a>
+      <ul class="nav__links">
+        <li><a href="#" class="nav__link">Home</a></li>
+        <li><a href="#" class="nav__link">Movies</a></li>
+        <li><a href="#" class="nav__link">About</a></li>
+      </ul>
     </div>
-  </div>
+  </nav>
+
+  <header>
+    <h1>Movie Search</h1>
+    <input
+      type="text"
+      placeholder="Search for a movie..."
+      oninput="onSearchChange(event)"
+    />
+    <p class="searchName"></p>
+  </header>
+
+  <main>
+    <div class="movies"></div>
+  </main>
 </body>
 </html>
