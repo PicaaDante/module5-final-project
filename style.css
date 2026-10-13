@@ -102,7 +102,7 @@ main {
 
 .movies {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -121,7 +121,7 @@ main {
 
 .movie img {
   width: 100%;
-  height: 270px;
+  height: 500px;
   object-fit: cover;
   background: #333;
 }

@@ -42,4 +42,3 @@ function onSearchChange(event) {
   console.log(event.target.value);
   getMovies(event.target.value);
 }
-
