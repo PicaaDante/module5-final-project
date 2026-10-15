@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie Search</title>
+  <title>Filmster</title>
   <link rel="stylesheet" href="style.css">
   <script src="index.js" defer></script>
 </head>
@@ -20,17 +20,30 @@
   </nav>
 
   <header>
+  <div class="movie__header">
     <h1>Movie Search</h1>
     <input
       type="text"
       placeholder="Search for a movie..."
       oninput="onSearchChange(event)"
     />
-    <p class="searchName"></p>
+    <select class="filter" onchange="onFilterChange(event)">
+      <option value="" disabled selected>Sort</option>
+      <option value="title">Title</option>
+      <option value="year">Year</option>
+    </select>
+  </div>
   </header>
 
   <main>
     <div class="movies"></div>
   </main>
+
+  <footer>
+    <div class="footer__container">
+      <p class="footer__logo">Filmster</p>
+      <p>&copy; 2026 Filmster. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
